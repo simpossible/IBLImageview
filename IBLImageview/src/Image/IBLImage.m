@@ -110,30 +110,30 @@
     
 }
 
-- (void)test{
-    CFArrayRef array =  CGImageSourceCopyTypeIdentifiers();
-    CFArrayRef desArray = CGImageDestinationCopyTypeIdentifiers();
-    NSLog(@"the array is %@",array);
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"aaa" ofType:@"gif"];
-    NSURL *fileUrl = [NSURL fileURLWithPath:path];
-    
-    CFURLRef gifurl = (__bridge CFURLRef)(fileUrl);
-    CFDictionaryRef param = (__bridge CFDictionaryRef)(@{(__bridge NSString*)kCGImageSourceThumbnailMaxPixelSize:@(0)});
-    CGImageSourceRef gifSource= CGImageSourceCreateWithURL(gifurl, param);
-    size_t t= CGImageSourceGetCount(gifSource);
-    
-    CFDictionaryRef dictionary = nil;
-    
-    for (size_t i = 0 ; i<t; i++) {
-       CFDictionaryRef property = CGImageSourceCopyPropertiesAtIndex(gifSource, i, NULL);
-        
-        NSDictionary *dic = (__bridge_transfer NSDictionary*)property;
-        NSLog(@"%@",dic);
-        CFRelease(property);
-    }
-    
-}
+//- (void)test{
+//    CFArrayRef array =  CGImageSourceCopyTypeIdentifiers();
+//    CFArrayRef desArray = CGImageDestinationCopyTypeIdentifiers();
+//    NSLog(@"the array is %@",array);
+//    
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"aaa" ofType:@"gif"];
+//    NSURL *fileUrl = [NSURL fileURLWithPath:path];
+//    
+//    CFURLRef gifurl = (__bridge CFURLRef)(fileUrl);
+//    CFDictionaryRef param = (__bridge CFDictionaryRef)(@{(__bridge NSString*)kCGImageSourceThumbnailMaxPixelSize:@(0)});
+//    CGImageSourceRef gifSource= CGImageSourceCreateWithURL(gifurl, param);
+//    size_t t= CGImageSourceGetCount(gifSource);
+//    
+//    CFDictionaryRef dictionary = nil;
+//    
+//    for (size_t i = 0 ; i<t; i++) {
+//       CFDictionaryRef property = CGImageSourceCopyPropertiesAtIndex(gifSource, i, NULL);
+//        
+//        NSDictionary *dic = (__bridge_transfer NSDictionary*)property;
+//        NSLog(@"%@",dic);
+//        CFRelease(property);
+//    }
+//    
+//}
 
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate{
     if (![_renders containsObject:delegate]) {

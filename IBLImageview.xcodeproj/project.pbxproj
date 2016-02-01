@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A475C63F1C5F025700966D67 /* IBLImageview.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C63E1C5F025700966D67 /* IBLImageview.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A475C6461C5F025700966D67 /* IBLImageview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A475C63B1C5F025700966D67 /* IBLImageview.framework */; };
 		A475C64B1C5F025700966D67 /* IBLImageviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C64A1C5F025700966D67 /* IBLImageviewTests.m */; };
-		A475C6611C5F027E00966D67 /* IBLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C6581C5F027E00966D67 /* IBLImage.h */; };
-		A475C6621C5F027E00966D67 /* IBLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6591C5F027E00966D67 /* IBLImage.m */; };
-		A475C6631C5F027E00966D67 /* IBLImageCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C65A1C5F027E00966D67 /* IBLImageCenter.h */; };
-		A475C6641C5F027E00966D67 /* IBLImageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C65B1C5F027E00966D67 /* IBLImageCenter.m */; };
-		A475C6651C5F027E00966D67 /* IBLImageView+image.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C65C1C5F027E00966D67 /* IBLImageView+image.h */; };
-		A475C6661C5F027E00966D67 /* IBLImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C65D1C5F027E00966D67 /* IBLImageView.h */; };
-		A475C6671C5F027E00966D67 /* IBLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C65E1C5F027E00966D67 /* IBLImageView.m */; };
-		A475C6681C5F027E00966D67 /* IBLRender.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C65F1C5F027E00966D67 /* IBLRender.h */; };
-		A475C6691C5F027E00966D67 /* IBLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6601C5F027E00966D67 /* IBLRender.m */; };
+		A475C6761C5F04E500966D67 /* IBLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C66D1C5F04E500966D67 /* IBLImage.h */; };
+		A475C6771C5F04E500966D67 /* IBLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C66E1C5F04E500966D67 /* IBLImage.m */; };
+		A475C6781C5F04E500966D67 /* IBLImageCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C66F1C5F04E500966D67 /* IBLImageCenter.h */; };
+		A475C6791C5F04E500966D67 /* IBLImageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6701C5F04E500966D67 /* IBLImageCenter.m */; };
+		A475C67A1C5F04E500966D67 /* IBLImageView+image.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C6711C5F04E500966D67 /* IBLImageView+image.h */; };
+		A475C67B1C5F04E500966D67 /* IBLImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C6721C5F04E500966D67 /* IBLImageView.h */; };
+		A475C67C1C5F04E500966D67 /* IBLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6731C5F04E500966D67 /* IBLImageView.m */; };
+		A475C67D1C5F04E500966D67 /* IBLRender.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C6741C5F04E500966D67 /* IBLRender.h */; };
+		A475C67E1C5F04E500966D67 /* IBLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6751C5F04E500966D67 /* IBLRender.m */; };
+		A475C6801C5F053F00966D67 /* IBLImageview.h in Headers */ = {isa = PBXBuildFile; fileRef = A475C67F1C5F053F00966D67 /* IBLImageview.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,20 +33,20 @@
 
 /* Begin PBXFileReference section */
 		A475C63B1C5F025700966D67 /* IBLImageview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBLImageview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A475C63E1C5F025700966D67 /* IBLImageview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBLImageview.h; sourceTree = "<group>"; };
 		A475C6401C5F025700966D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A475C6451C5F025700966D67 /* IBLImageviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBLImageviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A475C64A1C5F025700966D67 /* IBLImageviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBLImageviewTests.m; sourceTree = "<group>"; };
 		A475C64C1C5F025700966D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A475C6581C5F027E00966D67 /* IBLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImage.h; sourceTree = "<group>"; };
-		A475C6591C5F027E00966D67 /* IBLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImage.m; sourceTree = "<group>"; };
-		A475C65A1C5F027E00966D67 /* IBLImageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageCenter.h; sourceTree = "<group>"; };
-		A475C65B1C5F027E00966D67 /* IBLImageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageCenter.m; sourceTree = "<group>"; };
-		A475C65C1C5F027E00966D67 /* IBLImageView+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBLImageView+image.h"; sourceTree = "<group>"; };
-		A475C65D1C5F027E00966D67 /* IBLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageView.h; sourceTree = "<group>"; };
-		A475C65E1C5F027E00966D67 /* IBLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageView.m; sourceTree = "<group>"; };
-		A475C65F1C5F027E00966D67 /* IBLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLRender.h; sourceTree = "<group>"; };
-		A475C6601C5F027E00966D67 /* IBLRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLRender.m; sourceTree = "<group>"; };
+		A475C66D1C5F04E500966D67 /* IBLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImage.h; sourceTree = "<group>"; };
+		A475C66E1C5F04E500966D67 /* IBLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImage.m; sourceTree = "<group>"; };
+		A475C66F1C5F04E500966D67 /* IBLImageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageCenter.h; sourceTree = "<group>"; };
+		A475C6701C5F04E500966D67 /* IBLImageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageCenter.m; sourceTree = "<group>"; };
+		A475C6711C5F04E500966D67 /* IBLImageView+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBLImageView+image.h"; sourceTree = "<group>"; };
+		A475C6721C5F04E500966D67 /* IBLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageView.h; sourceTree = "<group>"; };
+		A475C6731C5F04E500966D67 /* IBLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageView.m; sourceTree = "<group>"; };
+		A475C6741C5F04E500966D67 /* IBLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLRender.h; sourceTree = "<group>"; };
+		A475C6751C5F04E500966D67 /* IBLRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLRender.m; sourceTree = "<group>"; };
+		A475C67F1C5F053F00966D67 /* IBLImageview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageview.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,6 @@
 		A475C6311C5F025700966D67 = {
 			isa = PBXGroup;
 			children = (
-				A475C6551C5F027E00966D67 /* inlcude */,
-				A475C6561C5F027E00966D67 /* src */,
 				A475C63D1C5F025700966D67 /* IBLImageview */,
 				A475C6491C5F025700966D67 /* IBLImageviewTests */,
 				A475C63C1C5F025700966D67 /* Products */,
@@ -91,7 +89,8 @@
 		A475C63D1C5F025700966D67 /* IBLImageview */ = {
 			isa = PBXGroup;
 			children = (
-				A475C63E1C5F025700966D67 /* IBLImageview.h */,
+				A475C66A1C5F04E500966D67 /* inlcude */,
+				A475C66B1C5F04E500966D67 /* src */,
 				A475C6401C5F025700966D67 /* Info.plist */,
 			);
 			path = IBLImageview;
@@ -106,35 +105,34 @@
 			path = IBLImageviewTests;
 			sourceTree = "<group>";
 		};
-		A475C6551C5F027E00966D67 /* inlcude */ = {
+		A475C66A1C5F04E500966D67 /* inlcude */ = {
 			isa = PBXGroup;
 			children = (
+				A475C67F1C5F053F00966D67 /* IBLImageview.h */,
 			);
-			name = inlcude;
-			path = ../inlcude;
+			path = inlcude;
 			sourceTree = "<group>";
 		};
-		A475C6561C5F027E00966D67 /* src */ = {
+		A475C66B1C5F04E500966D67 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A475C6571C5F027E00966D67 /* Image */,
+				A475C66C1C5F04E500966D67 /* Image */,
 			);
-			name = src;
-			path = ../src;
+			path = src;
 			sourceTree = "<group>";
 		};
-		A475C6571C5F027E00966D67 /* Image */ = {
+		A475C66C1C5F04E500966D67 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A475C6581C5F027E00966D67 /* IBLImage.h */,
-				A475C6591C5F027E00966D67 /* IBLImage.m */,
-				A475C65A1C5F027E00966D67 /* IBLImageCenter.h */,
-				A475C65B1C5F027E00966D67 /* IBLImageCenter.m */,
-				A475C65C1C5F027E00966D67 /* IBLImageView+image.h */,
-				A475C65D1C5F027E00966D67 /* IBLImageView.h */,
-				A475C65E1C5F027E00966D67 /* IBLImageView.m */,
-				A475C65F1C5F027E00966D67 /* IBLRender.h */,
-				A475C6601C5F027E00966D67 /* IBLRender.m */,
+				A475C66D1C5F04E500966D67 /* IBLImage.h */,
+				A475C66E1C5F04E500966D67 /* IBLImage.m */,
+				A475C66F1C5F04E500966D67 /* IBLImageCenter.h */,
+				A475C6701C5F04E500966D67 /* IBLImageCenter.m */,
+				A475C6711C5F04E500966D67 /* IBLImageView+image.h */,
+				A475C6721C5F04E500966D67 /* IBLImageView.h */,
+				A475C6731C5F04E500966D67 /* IBLImageView.m */,
+				A475C6741C5F04E500966D67 /* IBLRender.h */,
+				A475C6751C5F04E500966D67 /* IBLRender.m */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -146,12 +144,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A475C6611C5F027E00966D67 /* IBLImage.h in Headers */,
-				A475C6651C5F027E00966D67 /* IBLImageView+image.h in Headers */,
-				A475C6631C5F027E00966D67 /* IBLImageCenter.h in Headers */,
-				A475C6661C5F027E00966D67 /* IBLImageView.h in Headers */,
-				A475C6681C5F027E00966D67 /* IBLRender.h in Headers */,
-				A475C63F1C5F025700966D67 /* IBLImageview.h in Headers */,
+				A475C6761C5F04E500966D67 /* IBLImage.h in Headers */,
+				A475C6801C5F053F00966D67 /* IBLImageview.h in Headers */,
+				A475C67A1C5F04E500966D67 /* IBLImageView+image.h in Headers */,
+				A475C6781C5F04E500966D67 /* IBLImageCenter.h in Headers */,
+				A475C67B1C5F04E500966D67 /* IBLImageView.h in Headers */,
+				A475C67D1C5F04E500966D67 /* IBLRender.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A475C6671C5F027E00966D67 /* IBLImageView.m in Sources */,
-				A475C6691C5F027E00966D67 /* IBLRender.m in Sources */,
-				A475C6641C5F027E00966D67 /* IBLImageCenter.m in Sources */,
-				A475C6621C5F027E00966D67 /* IBLImage.m in Sources */,
+				A475C67C1C5F04E500966D67 /* IBLImageView.m in Sources */,
+				A475C67E1C5F04E500966D67 /* IBLRender.m in Sources */,
+				A475C6791C5F04E500966D67 /* IBLImageCenter.m in Sources */,
+				A475C6771C5F04E500966D67 /* IBLImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +434,7 @@
 				A475C6511C5F025700966D67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A475C6521C5F025700966D67 /* Build configuration list for PBXNativeTarget "IBLImageviewTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +443,7 @@
 				A475C6541C5F025700966D67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

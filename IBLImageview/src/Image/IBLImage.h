@@ -44,8 +44,8 @@
 
 - (instancetype)initWithPath:(NSString *)path;
 
-- (void)test;
-    
+//- (void)test;
+
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate;
 
 - (void)removeDelegate:(id<IBLImageRenderDelegate>)delegate;

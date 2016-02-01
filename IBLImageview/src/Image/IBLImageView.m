@@ -61,12 +61,15 @@
 - (void)restartAnimation{
 
 }
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 
 - (void)torenderImage:(UIImage *)image{
     if (image) {
         [self setImage:image];
     }
 }
+#pragma clang diagnostic pop
 
 - (void)dealloc{
     [self.iblImage removeDelegate:self];
