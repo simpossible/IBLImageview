@@ -19,7 +19,7 @@
 @implementation IBLImageCenter
 
 +(IBLImageCenter *)sharedCenter{
-    dispatch_once_t token;
+    static dispatch_once_t token;
     static IBLImageCenter* sharedCenter = nil;
     
     dispatch_once(&token, ^{
@@ -36,8 +36,6 @@
 }
 
 - (IBLImage*)getIBLImageWithPath:(NSString*)path{
-    
-    
     CFStringRef md5 = FileMD5HashCreateWithPath((__bridge CFStringRef)(path));
     NSString *gifMd5 = (__bridge_transfer NSString*)md5;
     

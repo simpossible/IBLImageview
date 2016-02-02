@@ -1,0 +1,4 @@
+dgph
+build/*
+output/*
+build.sh

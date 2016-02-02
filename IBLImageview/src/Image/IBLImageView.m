@@ -34,10 +34,17 @@
 }
 
 - (void)setImageWithPath:(NSString *)path{
+    
+    if (!path) {
+        NSLog(@"IBL:空路径无法获取图片");
+        return;
+    }
+    
     IBLImage *image = [[IBLImageCenter sharedCenter]getIBLImageWithPath:path];
     if (image) {
         if (image.imageCount > 1) {
             [image addDelegates:self];
+            [[NSNotificationCenter defaultCenter]postNotificationName:kIBL_IMG_RE_ANIMATE object:nil];
         }else if(image.imageCount == 1){
             [self setImage:image.images[0]];
         }else{

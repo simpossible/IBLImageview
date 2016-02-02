@@ -7,6 +7,11 @@
 		<key>IBLImageview.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>iblimageview.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>A475C6441C5F025700966D67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A475C68A1C5F22A700966D67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A475C69B1C5F245F00966D67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
