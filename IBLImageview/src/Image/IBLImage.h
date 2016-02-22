@@ -18,7 +18,6 @@
 
 @interface IBLImage : NSObject
 
-@property(nonatomic, assign)BOOL needRender;
 
 /**
  * 当前的所有图片
@@ -40,6 +39,9 @@
  */
 @property(nonatomic, assign, readonly)NSInteger   imageCount;
 
+/**所有播放这张图片的imageview*/
+@property(nonatomic, strong, readonly)NSMutableArray *renders;
+
 @property(nonatomic, assign)int imageIndex;
 
 - (instancetype)initWithPath:(NSString *)path;
@@ -49,5 +51,9 @@
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate;
 
 - (void)removeDelegate:(id<IBLImageRenderDelegate>)delegate;
+
 - (void)stopRender;
+
+/**停止播放*/
+- (void)stopPlay;
 @end

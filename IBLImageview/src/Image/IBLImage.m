@@ -13,7 +13,7 @@
 
 @interface IBLImage ()
 @property(nonatomic, copy)NSString * path;
-@property(nonatomic, strong)NSMutableArray *renders;
+
 
 @property(nonatomic, strong)IBLRender *render;
 @end
@@ -33,7 +33,6 @@
     _unclamTimes = [NSMutableArray array];
     _delayTimes = [NSMutableArray array];
     _renders = [NSMutableArray array];
-    _needRender = NO;
     [self CreateCGImagesFormPath];
     return self;
 }
@@ -139,8 +138,7 @@
     if (![_renders containsObject:delegate]) {
         [_renders addObject:delegate];
     }
-    if (!_needRender) {
-        self.needRender = YES;
+    if (self.render) {
         [self startRender];
     }
 }
@@ -195,16 +193,4 @@
     [self startRender];
 }
 
-- (void)setNeedRender:(BOOL)needRender{
-    if (needRender == _needRender) {
-        return;
-    }
-    if (needRender) {
-        _needRender = YES;
-        [self beconListenr];
-    }else{
-        _needRender = NO;
-        [self resignListener];
-    }
-}
 @end

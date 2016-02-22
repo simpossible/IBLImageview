@@ -78,6 +78,12 @@
 }
 #pragma clang diagnostic pop
 
+- (void)stopIBLGifPlay{
+    [self.iblImage removeDelegate:self];
+    [self setImage:self.iblImage.images[0]];
+
+}
+
 - (void)dealloc{
     [self.iblImage removeDelegate:self];
 }

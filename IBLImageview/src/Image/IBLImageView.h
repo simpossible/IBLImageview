@@ -20,5 +20,7 @@
 - (void)setImageWithPath:(NSString*)path;
 
 - (void)restartAnimation;
+
+- (void)stopIBLGifPlay;
 @end
 
