@@ -42,11 +42,13 @@
 /**所有播放这张图片的imageview*/
 @property(nonatomic, strong, readonly)NSMutableArray *renders;
 
+@property(nonatomic, assign)NSInteger tag;
+
 @property(nonatomic, assign)int imageIndex;
 
 - (instancetype)initWithPath:(NSString *)path;
 
-//- (void)test;
+- (instancetype)initWithImagesArray:(NSArray*)images andClamTimesArray:(NSArray*)array;
 
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate;
 

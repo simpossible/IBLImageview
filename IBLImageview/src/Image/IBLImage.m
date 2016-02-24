@@ -37,7 +37,32 @@
     return self;
 }
 
+- (instancetype)initWithImagesArray:(NSArray *)images andClamTimesArray:(NSArray *)clams{
+    if (self = [super init]) {
+        _images = [NSMutableArray arrayWithArray:images];
+        
+        NSMutableArray *tempClams = [NSMutableArray array];
+        for (UIImage *image in images) {
+            if (![image isKindOfClass:[UIImage class]]) {
+                    //不是图片
+                NSAssert(true, @"IBL:init ibl images not ilegle");
+            }else{
+                [tempClams addObject:@(1)];
+            }
+        }
+        
+        for (int i = 0; i< clams.count; i ++) {
+            tempClams[i] = clams[i];
+        }
+        
+        _unclamTimes = [NSMutableArray arrayWithArray:tempClams];
+        _delayTimes = [NSMutableArray arrayWithArray:tempClams];
+         _renders = [NSMutableArray array];
+    }
+    return self;
+}
 
+#pragma mark -
 - (void)CreateCGImagesFormPath{
     NSURL *fileUrl = [NSURL fileURLWithPath:self.path];
     CFURLRef cfFileUrl = (__bridge CFURLRef)fileUrl;
@@ -104,35 +129,9 @@
         }
         
     }
-    NSLog(@"delayTimes:%@",_delayTimes);
-    NSLog(@"unclamTime:%@",_unclamTimes);
     
 }
 
-//- (void)test{
-//    CFArrayRef array =  CGImageSourceCopyTypeIdentifiers();
-//    CFArrayRef desArray = CGImageDestinationCopyTypeIdentifiers();
-//    NSLog(@"the array is %@",array);
-//    
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"aaa" ofType:@"gif"];
-//    NSURL *fileUrl = [NSURL fileURLWithPath:path];
-//    
-//    CFURLRef gifurl = (__bridge CFURLRef)(fileUrl);
-//    CFDictionaryRef param = (__bridge CFDictionaryRef)(@{(__bridge NSString*)kCGImageSourceThumbnailMaxPixelSize:@(0)});
-//    CGImageSourceRef gifSource= CGImageSourceCreateWithURL(gifurl, param);
-//    size_t t= CGImageSourceGetCount(gifSource);
-//    
-//    CFDictionaryRef dictionary = nil;
-//    
-//    for (size_t i = 0 ; i<t; i++) {
-//       CFDictionaryRef property = CGImageSourceCopyPropertiesAtIndex(gifSource, i, NULL);
-//        
-//        NSDictionary *dic = (__bridge_transfer NSDictionary*)property;
-//        NSLog(@"%@",dic);
-//        CFRelease(property);
-//    }
-//    
-//}
 
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate{
     if (![_renders containsObject:delegate]) {

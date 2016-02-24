@@ -12,8 +12,9 @@
 #import <Foundation/Foundation.h>
 @interface IBLImageCenter ()
 
-@property(nonatomic, strong)NSMutableDictionary *iblImages;
+@property(nonatomic, strong)NSMutableDictionary *iblMd5Images;
 
+@property(nonatomic, strong)NSMutableDictionary *iblKeyImages;
 @end
 
 @implementation IBLImageCenter
@@ -30,7 +31,7 @@
 
 - (instancetype)init{
     if (self = [super init]) {
-        _iblImages = [NSMutableDictionary dictionary];
+        _iblMd5Images = [NSMutableDictionary dictionary];
     }
     return  self;
 }
@@ -39,16 +40,39 @@
     CFStringRef md5 = FileMD5HashCreateWithPath((__bridge CFStringRef)(path));
     NSString *gifMd5 = (__bridge_transfer NSString*)md5;
     
-    IBLImage *image = [_iblImages objectForKey:gifMd5];
+    IBLImage *image = [_iblMd5Images objectForKey:gifMd5];
     
     if (!image) {
         image = [[IBLImage alloc]initWithPath:path];
-        [_iblImages setObject:image forKey:gifMd5];
+        [_iblMd5Images setObject:image forKey:gifMd5];
     }
         
     return image;
 }
 
+- (IBLImage *)getIBLImageWithKey:(NSString *)imageKey{
+    IBLImage *image = nil;
+    if (!imageKey && ![imageKey isEqualToString:@""]) {
+        image = [_iblKeyImages objectForKey:imageKey];
+    }
+    return image;
+}
+
+- (IBLImage *)getIBLImageWithKey:(NSString *)imageKey andImageArray:(NSArray *)images andDelays:(NSArray *)array{
+    IBLImage *iblImage;
+    
+    if (imageKey) {
+        iblImage = nil;
+    }else{
+        iblImage = _iblKeyImages[imageKey];
+        if (!iblImage) {
+            iblImage = [[IBLImage alloc]initWithImagesArray:images andClamTimesArray:array];
+        }
+    }
+    return iblImage;
+}
+
+/**获取MD5值*/
 CFStringRef FileMD5HashCreateWithPath(CFStringRef filePath) {
     
     // Declare needed variables
