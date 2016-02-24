@@ -44,8 +44,7 @@
         NSMutableArray *tempClams = [NSMutableArray array];
         for (UIImage *image in images) {
             if (![image isKindOfClass:[UIImage class]]) {
-                    //不是图片
-                NSAssert(true, @"IBL:init ibl images not ilegle");
+                NSAssert(true, @"IBL:init ibl images not ilegle");//不是图片
             }else{
                 [tempClams addObject:@(1)];
             }
