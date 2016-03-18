@@ -11,11 +11,19 @@
 #import <UIKit/UIKit.h>
 #import "IBLRender.h"
 
-@interface IBLImage ()
-@property(nonatomic, copy)NSString * path;
-@property(nonatomic, strong)NSMutableArray *renders;
+#import "IBLGifImageViewDefine.h"
 
-@property(nonatomic, strong)IBLRender *render;
+@interface IBLImage ()<IBLRenderDelegate>
+@property(nonatomic, copy)NSString * path;
+@property(nonatomic, strong)NSMutableArray *renders; ///< 所有被渲染的imageview
+
+@property(nonatomic, strong, setter=setRender:)IBLRender *render;
+
+@property(nonatomic, copy)void (^completeCallback)();///< 播放完成的回调
+
+@property(nonatomic, copy)void (^eachTimeCallBack)();///< 每一次播放完成的回调
+
+@property(nonatomic, assign)IBLImageType imageType;
 @end
 
 @implementation IBLImage
@@ -29,15 +37,38 @@
         }
     }
     
+    [self initialDatas];
+    _imageType = IBLImageTypeRenderAllTheTime;
+    return self;
+}
+
+- (instancetype)initWithPath:(NSString *)path playTimes:(NSInteger)playtime andCallBack:(void (^)())callback {
+    if (self = [super init]) {
+        if (path) {
+            self.path = path;
+        }else{
+            self.path = @"";
+        }
+
+    }
+    [self initialDatas];
+    _playTimes =  playtime;
+    _completeCallback = callback;
+    _imageType = IBLImageTypeRenderWithTImes;
+    return self;
+}
+
+- (void)initialDatas {
     _images = [NSMutableArray array];
     _unclamTimes = [NSMutableArray array];
     _delayTimes = [NSMutableArray array];
     _renders = [NSMutableArray array];
     _needRender = NO;
     [self CreateCGImagesFormPath];
-    return self;
 }
 
+
+#pragma mark datasource(数据初始化) -
 
 - (void)CreateCGImagesFormPath{
     NSURL *fileUrl = [NSURL fileURLWithPath:self.path];
@@ -110,39 +141,22 @@
     
 }
 
-//- (void)test{
-//    CFArrayRef array =  CGImageSourceCopyTypeIdentifiers();
-//    CFArrayRef desArray = CGImageDestinationCopyTypeIdentifiers();
-//    NSLog(@"the array is %@",array);
-//    
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"aaa" ofType:@"gif"];
-//    NSURL *fileUrl = [NSURL fileURLWithPath:path];
-//    
-//    CFURLRef gifurl = (__bridge CFURLRef)(fileUrl);
-//    CFDictionaryRef param = (__bridge CFDictionaryRef)(@{(__bridge NSString*)kCGImageSourceThumbnailMaxPixelSize:@(0)});
-//    CGImageSourceRef gifSource= CGImageSourceCreateWithURL(gifurl, param);
-//    size_t t= CGImageSourceGetCount(gifSource);
-//    
-//    CFDictionaryRef dictionary = nil;
-//    
-//    for (size_t i = 0 ; i<t; i++) {
-//       CFDictionaryRef property = CGImageSourceCopyPropertiesAtIndex(gifSource, i, NULL);
-//        
-//        NSDictionary *dic = (__bridge_transfer NSDictionary*)property;
-//        NSLog(@"%@",dic);
-//        CFRelease(property);
-//    }
-//    
-//}
 
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate{
     if (![_renders containsObject:delegate]) {
         [_renders addObject:delegate];
     }
-    if (!_needRender) {
-        self.needRender = YES;
-        [self startRender];
+    if (self.imageType == IBLImageTypeRenderAllTheTime) {
+        if (!_needRender) {
+            self.needRender = YES; ///会开启监听
+            [self startRender];
+        }
+    } else if (self.imageType == IBLImageTypeRenderWithTImes) {
+        if (!_needRender) {
+            [self startRender];    /// 不能开启监听
+        }
     }
+   
 }
 
 - (void)removeDelegate:(id<IBLImageRenderDelegate>)delegate{
@@ -154,6 +168,10 @@
     }
 }
 
+
+// 遍历渲染 imageview
+
+/**渲染其所有的image*/
 - (void)setImageIndex:(int)imageIndex{
     if (imageIndex<_imageCount && imageIndex >=0) {
         _imageIndex = imageIndex;
@@ -167,6 +185,7 @@
     
 }
 
+/**开始渲染*/
 -(void)startRender{
     if (self.render) {
         return;
@@ -176,12 +195,13 @@
     [self.render startRender];
 }
 
+/**停止渲染*/
 - (void)stopRender{
     self.render = nil;
     self.imageIndex = 0;
 }
 
-
+/**这个监听 可以让所有的imageview 重新渲染*/
 - (void)beconListenr{
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reRender) name:kIBL_IMG_RE_ANIMATE object:nil];
 }
@@ -195,6 +215,7 @@
     [self startRender];
 }
 
+/**setter 方法 － 添加监听*/
 - (void)setNeedRender:(BOOL)needRender{
     if (needRender == _needRender) {
         return;
@@ -207,4 +228,23 @@
         [self resignListener];
     }
 }
+
+#pragma mark render回调 －
+
+- (void)setRender:(IBLRender *)render {
+    _render = render;
+    _render.delegate = self;
+}
+
+/**每一次渲染的回调 一个gif 播放完后*/
+- (void)renderEachComplete {
+    
+}
+
+- (void)renderComplite {
+    if (self.completeCallback) {
+        self.completeCallback();
+    }
+}
+
 @end
