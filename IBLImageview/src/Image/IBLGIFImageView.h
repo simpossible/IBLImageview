@@ -9,5 +9,7 @@
 #ifndef IBLGIFImageView_h
 #define IBLGIFImageView_h
 
+#import "IBLImageView.h"
+#import "IBLImage.h"
 
 #endif /* IBLGIFImageView_h */
