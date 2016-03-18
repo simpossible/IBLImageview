@@ -7,54 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A475C64B1C5F025700966D67 /* IBLImageviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C64A1C5F025700966D67 /* IBLImageviewTests.m */; };
-		A475C6A51C5F247300966D67 /* IBLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C66E1C5F04E500966D67 /* IBLImage.m */; };
-		A475C6A61C5F247300966D67 /* IBLImageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6701C5F04E500966D67 /* IBLImageCenter.m */; };
-		A475C6A81C5F247300966D67 /* IBLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6751C5F04E500966D67 /* IBLRender.m */; };
-		A479DB081C9BFC0500EE8DE9 /* IBLGIFImageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A479DB051C9BCA7300EE8DE9 /* IBLGIFImageView.h */; };
+		A479DBD41C9C06E900EE8DE9 /* IBLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBCC1C9C06E900EE8DE9 /* IBLImage.m */; };
+		A479DBD51C9C06E900EE8DE9 /* IBLImageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBCE1C9C06E900EE8DE9 /* IBLImageCenter.m */; };
+		A479DBD61C9C06E900EE8DE9 /* IBLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBD11C9C06E900EE8DE9 /* IBLImageView.m */; };
+		A479DBD71C9C06E900EE8DE9 /* IBLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBD31C9C06E900EE8DE9 /* IBLRender.m */; };
+		A479DBD91C9C082600EE8DE9 /* IBLIGifImageview.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A479DBD81C9C07C500EE8DE9 /* IBLIGifImageview.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A475C69A1C5F245F00966D67 /* CopyFiles */ = {
+		A479DBB81C9C068300EE8DE9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A479DB081C9BFC0500EE8DE9 /* IBLGIFImageView.h in CopyFiles */,
+				A479DBD91C9C082600EE8DE9 /* IBLIGifImageview.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A475C6401C5F025700966D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A475C6451C5F025700966D67 /* IBLImageviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBLImageviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A475C64A1C5F025700966D67 /* IBLImageviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBLImageviewTests.m; sourceTree = "<group>"; };
-		A475C64C1C5F025700966D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A475C66D1C5F04E500966D67 /* IBLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImage.h; sourceTree = "<group>"; };
-		A475C66E1C5F04E500966D67 /* IBLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImage.m; sourceTree = "<group>"; };
-		A475C66F1C5F04E500966D67 /* IBLImageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageCenter.h; sourceTree = "<group>"; };
-		A475C6701C5F04E500966D67 /* IBLImageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageCenter.m; sourceTree = "<group>"; };
-		A475C6711C5F04E500966D67 /* IBLImageView+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBLImageView+image.h"; sourceTree = "<group>"; };
-		A475C6721C5F04E500966D67 /* IBLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageView.h; sourceTree = "<group>"; };
-		A475C6731C5F04E500966D67 /* IBLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageView.m; sourceTree = "<group>"; };
-		A475C6741C5F04E500966D67 /* IBLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLRender.h; sourceTree = "<group>"; };
-		A475C6751C5F04E500966D67 /* IBLRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLRender.m; sourceTree = "<group>"; };
-		A475C69C1C5F245F00966D67 /* libIBLImageview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIBLImageview.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A479DB051C9BCA7300EE8DE9 /* IBLGIFImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IBLGIFImageView.h; path = ../src/Image/IBLGIFImageView.h; sourceTree = "<group>"; };
-		A479DB061C9BF2BB00EE8DE9 /* IBLGifImageViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = IBLGifImageViewDefine.h; sourceTree = "<group>"; };
+		A479DBBA1C9C068300EE8DE9 /* libIBLImageview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIBLImageview.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A479DBC91C9C06E900EE8DE9 /* IBLGIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLGIFImageView.h; sourceTree = "<group>"; };
+		A479DBCA1C9C06E900EE8DE9 /* IBLGifImageViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLGifImageViewDefine.h; sourceTree = "<group>"; };
+		A479DBCB1C9C06E900EE8DE9 /* IBLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImage.h; sourceTree = "<group>"; };
+		A479DBCC1C9C06E900EE8DE9 /* IBLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImage.m; sourceTree = "<group>"; };
+		A479DBCD1C9C06E900EE8DE9 /* IBLImageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageCenter.h; sourceTree = "<group>"; };
+		A479DBCE1C9C06E900EE8DE9 /* IBLImageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageCenter.m; sourceTree = "<group>"; };
+		A479DBCF1C9C06E900EE8DE9 /* IBLImageView+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBLImageView+image.h"; sourceTree = "<group>"; };
+		A479DBD01C9C06E900EE8DE9 /* IBLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageView.h; sourceTree = "<group>"; };
+		A479DBD11C9C06E900EE8DE9 /* IBLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageView.m; sourceTree = "<group>"; };
+		A479DBD21C9C06E900EE8DE9 /* IBLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLRender.h; sourceTree = "<group>"; };
+		A479DBD31C9C06E900EE8DE9 /* IBLRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLRender.m; sourceTree = "<group>"; };
+		A479DBD81C9C07C500EE8DE9 /* IBLIGifImageview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLIGifImageview.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A475C6421C5F025700966D67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A475C6991C5F245F00966D67 /* Frameworks */ = {
+		A479DBB71C9C068300EE8DE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,112 +54,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A475C6311C5F025700966D67 = {
+		A479DBB11C9C068300EE8DE9 = {
 			isa = PBXGroup;
 			children = (
-				A475C63D1C5F025700966D67 /* IBLImageview */,
-				A475C6491C5F025700966D67 /* IBLImageviewTests */,
-				A475C69D1C5F245F00966D67 /* IBLImageview */,
-				A475C63C1C5F025700966D67 /* Products */,
+				A479DBBC1C9C068300EE8DE9 /* IBLImageview */,
+				A479DBBB1C9C068300EE8DE9 /* Products */,
 			);
 			sourceTree = "<group>";
-			usesTabs = 0;
 		};
-		A475C63C1C5F025700966D67 /* Products */ = {
+		A479DBBB1C9C068300EE8DE9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A475C6451C5F025700966D67 /* IBLImageviewTests.xctest */,
-				A475C69C1C5F245F00966D67 /* libIBLImageview.a */,
+				A479DBBA1C9C068300EE8DE9 /* libIBLImageview.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A475C63D1C5F025700966D67 /* IBLImageview */ = {
+		A479DBBC1C9C068300EE8DE9 /* IBLImageview */ = {
 			isa = PBXGroup;
 			children = (
-				A475C66A1C5F04E500966D67 /* inlcude */,
-				A475C66B1C5F04E500966D67 /* src */,
-				A475C6401C5F025700966D67 /* Info.plist */,
+				A479DBC61C9C06E900EE8DE9 /* include */,
+				A479DBC71C9C06E900EE8DE9 /* src */,
 			);
 			path = IBLImageview;
 			sourceTree = "<group>";
 		};
-		A475C6491C5F025700966D67 /* IBLImageviewTests */ = {
+		A479DBC61C9C06E900EE8DE9 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				A475C64A1C5F025700966D67 /* IBLImageviewTests.m */,
-				A475C64C1C5F025700966D67 /* Info.plist */,
+				A479DBD81C9C07C500EE8DE9 /* IBLIGifImageview.h */,
 			);
-			path = IBLImageviewTests;
+			path = include;
 			sourceTree = "<group>";
 		};
-		A475C66A1C5F04E500966D67 /* inlcude */ = {
+		A479DBC71C9C06E900EE8DE9 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A479DB051C9BCA7300EE8DE9 /* IBLGIFImageView.h */,
-			);
-			path = inlcude;
-			sourceTree = "<group>";
-		};
-		A475C66B1C5F04E500966D67 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				A475C66C1C5F04E500966D67 /* Image */,
+				A479DBC81C9C06E900EE8DE9 /* Image */,
 			);
 			path = src;
 			sourceTree = "<group>";
 		};
-		A475C66C1C5F04E500966D67 /* Image */ = {
+		A479DBC81C9C06E900EE8DE9 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A475C66D1C5F04E500966D67 /* IBLImage.h */,
-				A475C66E1C5F04E500966D67 /* IBLImage.m */,
-				A475C66F1C5F04E500966D67 /* IBLImageCenter.h */,
-				A475C6701C5F04E500966D67 /* IBLImageCenter.m */,
-				A475C6711C5F04E500966D67 /* IBLImageView+image.h */,
-				A475C6721C5F04E500966D67 /* IBLImageView.h */,
-				A475C6731C5F04E500966D67 /* IBLImageView.m */,
-				A475C6741C5F04E500966D67 /* IBLRender.h */,
-				A475C6751C5F04E500966D67 /* IBLRender.m */,
-				A479DB061C9BF2BB00EE8DE9 /* IBLGifImageViewDefine.h */,
+				A479DBC91C9C06E900EE8DE9 /* IBLGIFImageView.h */,
+				A479DBCA1C9C06E900EE8DE9 /* IBLGifImageViewDefine.h */,
+				A479DBCB1C9C06E900EE8DE9 /* IBLImage.h */,
+				A479DBCC1C9C06E900EE8DE9 /* IBLImage.m */,
+				A479DBCD1C9C06E900EE8DE9 /* IBLImageCenter.h */,
+				A479DBCE1C9C06E900EE8DE9 /* IBLImageCenter.m */,
+				A479DBCF1C9C06E900EE8DE9 /* IBLImageView+image.h */,
+				A479DBD01C9C06E900EE8DE9 /* IBLImageView.h */,
+				A479DBD11C9C06E900EE8DE9 /* IBLImageView.m */,
+				A479DBD21C9C06E900EE8DE9 /* IBLRender.h */,
+				A479DBD31C9C06E900EE8DE9 /* IBLRender.m */,
 			);
 			path = Image;
-			sourceTree = "<group>";
-		};
-		A475C69D1C5F245F00966D67 /* IBLImageview */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IBLImageview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A475C6441C5F025700966D67 /* IBLImageviewTests */ = {
+		A479DBB91C9C068300EE8DE9 /* IBLImageview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A475C6521C5F025700966D67 /* Build configuration list for PBXNativeTarget "IBLImageviewTests" */;
+			buildConfigurationList = A479DBC31C9C068300EE8DE9 /* Build configuration list for PBXNativeTarget "IBLImageview" */;
 			buildPhases = (
-				A475C6411C5F025700966D67 /* Sources */,
-				A475C6421C5F025700966D67 /* Frameworks */,
-				A475C6431C5F025700966D67 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IBLImageviewTests;
-			productName = IBLImageviewTests;
-			productReference = A475C6451C5F025700966D67 /* IBLImageviewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A475C69B1C5F245F00966D67 /* IBLImageview */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A475C6A21C5F245F00966D67 /* Build configuration list for PBXNativeTarget "IBLImageview" */;
-			buildPhases = (
-				A475C6981C5F245F00966D67 /* Sources */,
-				A475C6991C5F245F00966D67 /* Frameworks */,
-				A475C69A1C5F245F00966D67 /* CopyFiles */,
+				A479DBB61C9C068300EE8DE9 /* Sources */,
+				A479DBB71C9C068300EE8DE9 /* Frameworks */,
+				A479DBB81C9C068300EE8DE9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -177,77 +130,56 @@
 			);
 			name = IBLImageview;
 			productName = IBLImageview;
-			productReference = A475C69C1C5F245F00966D67 /* libIBLImageview.a */;
+			productReference = A479DBBA1C9C068300EE8DE9 /* libIBLImageview.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A475C6321C5F025700966D67 /* Project object */ = {
+		A479DBB21C9C068300EE8DE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = simpossible;
 				TargetAttributes = {
-					A475C6441C5F025700966D67 = {
-						CreatedOnToolsVersion = 7.2;
-					};
-					A475C69B1C5F245F00966D67 = {
+					A479DBB91C9C068300EE8DE9 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = A475C6351C5F025700966D67 /* Build configuration list for PBXProject "IBLImageview" */;
+			buildConfigurationList = A479DBB51C9C068300EE8DE9 /* Build configuration list for PBXProject "IBLImageview" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A475C6311C5F025700966D67;
-			productRefGroup = A475C63C1C5F025700966D67 /* Products */;
+			mainGroup = A479DBB11C9C068300EE8DE9;
+			productRefGroup = A479DBBB1C9C068300EE8DE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A475C6441C5F025700966D67 /* IBLImageviewTests */,
-				A475C69B1C5F245F00966D67 /* IBLImageview */,
+				A479DBB91C9C068300EE8DE9 /* IBLImageview */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		A475C6431C5F025700966D67 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A475C6411C5F025700966D67 /* Sources */ = {
+		A479DBB61C9C068300EE8DE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A475C64B1C5F025700966D67 /* IBLImageviewTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A475C6981C5F245F00966D67 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A475C6A51C5F247300966D67 /* IBLImage.m in Sources */,
-				A475C6A61C5F247300966D67 /* IBLImageCenter.m in Sources */,
-				A475C6A81C5F247300966D67 /* IBLRender.m in Sources */,
+				A479DBD61C9C06E900EE8DE9 /* IBLImageView.m in Sources */,
+				A479DBD71C9C06E900EE8DE9 /* IBLRender.m in Sources */,
+				A479DBD51C9C06E900EE8DE9 /* IBLImageCenter.m in Sources */,
+				A479DBD41C9C06E900EE8DE9 /* IBLImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A475C64D1C5F025700966D67 /* Debug */ = {
+		A479DBC11C9C068300EE8DE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +198,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -288,13 +219,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A475C64E1C5F025700966D67 /* Release */ = {
+		A479DBC21C9C068300EE8DE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -313,7 +241,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -328,34 +255,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A475C6531C5F025700966D67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = IBLImageviewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibellar.opensource.IBLImageviewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A475C6541C5F025700966D67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = IBLImageviewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibellar.opensource.IBLImageviewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A475C6A31C5F245F00966D67 /* Debug */ = {
+		A479DBC41C9C068300EE8DE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
@@ -364,7 +268,7 @@
 			};
 			name = Debug;
 		};
-		A475C6A41C5F245F00966D67 /* Release */ = {
+		A479DBC51C9C068300EE8DE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
@@ -376,34 +280,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A475C6351C5F025700966D67 /* Build configuration list for PBXProject "IBLImageview" */ = {
+		A479DBB51C9C068300EE8DE9 /* Build configuration list for PBXProject "IBLImageview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A475C64D1C5F025700966D67 /* Debug */,
-				A475C64E1C5F025700966D67 /* Release */,
+				A479DBC11C9C068300EE8DE9 /* Debug */,
+				A479DBC21C9C068300EE8DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A475C6521C5F025700966D67 /* Build configuration list for PBXNativeTarget "IBLImageviewTests" */ = {
+		A479DBC31C9C068300EE8DE9 /* Build configuration list for PBXNativeTarget "IBLImageview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A475C6531C5F025700966D67 /* Debug */,
-				A475C6541C5F025700966D67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A475C6A21C5F245F00966D67 /* Build configuration list for PBXNativeTarget "IBLImageview" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A475C6A31C5F245F00966D67 /* Debug */,
-				A475C6A41C5F245F00966D67 /* Release */,
+				A479DBC41C9C068300EE8DE9 /* Debug */,
+				A479DBC51C9C068300EE8DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A475C6321C5F025700966D67 /* Project object */;
+	rootObject = A479DBB21C9C068300EE8DE9 /* Project object */;
 }

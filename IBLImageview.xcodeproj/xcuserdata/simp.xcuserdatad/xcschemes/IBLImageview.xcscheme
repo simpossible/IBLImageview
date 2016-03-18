@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A475C69B1C5F245F00966D67"
+               BlueprintIdentifier = "A479DBB91C9C068300EE8DE9"
                BuildableName = "libIBLImageview.a"
                BlueprintName = "IBLImageview"
                ReferencedContainer = "container:IBLImageview.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A475C69B1C5F245F00966D67"
+            BlueprintIdentifier = "A479DBB91C9C068300EE8DE9"
             BuildableName = "libIBLImageview.a"
             BlueprintName = "IBLImageview"
             ReferencedContainer = "container:IBLImageview.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A475C69B1C5F245F00966D67"
+            BlueprintIdentifier = "A479DBB91C9C068300EE8DE9"
             BuildableName = "libIBLImageview.a"
             BlueprintName = "IBLImageview"
             ReferencedContainer = "container:IBLImageview.xcodeproj">
