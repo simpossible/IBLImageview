@@ -10,7 +10,6 @@
 		A475C64B1C5F025700966D67 /* IBLImageviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C64A1C5F025700966D67 /* IBLImageviewTests.m */; };
 		A475C6A51C5F247300966D67 /* IBLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C66E1C5F04E500966D67 /* IBLImage.m */; };
 		A475C6A61C5F247300966D67 /* IBLImageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6701C5F04E500966D67 /* IBLImageCenter.m */; };
-		A475C6A71C5F247300966D67 /* IBLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6731C5F04E500966D67 /* IBLImageView.m */; };
 		A475C6A81C5F247300966D67 /* IBLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A475C6751C5F04E500966D67 /* IBLRender.m */; };
 		A479DB081C9BFC0500EE8DE9 /* IBLGIFImageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A479DB051C9BCA7300EE8DE9 /* IBLGIFImageView.h */; };
 /* End PBXBuildFile section */
@@ -42,8 +41,6 @@
 		A475C6731C5F04E500966D67 /* IBLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageView.m; sourceTree = "<group>"; };
 		A475C6741C5F04E500966D67 /* IBLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLRender.h; sourceTree = "<group>"; };
 		A475C6751C5F04E500966D67 /* IBLRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLRender.m; sourceTree = "<group>"; };
-		A475C68D1C5F22A700966D67 /* iblimageview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iblimageview.h; sourceTree = "<group>"; };
-		A475C68F1C5F22A800966D67 /* iblimageview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iblimageview.m; sourceTree = "<group>"; };
 		A475C69C1C5F245F00966D67 /* libIBLImageview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIBLImageview.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A479DB051C9BCA7300EE8DE9 /* IBLGIFImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IBLGIFImageView.h; path = ../src/Image/IBLGIFImageView.h; sourceTree = "<group>"; };
 		A479DB061C9BF2BB00EE8DE9 /* IBLGifImageViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = IBLGifImageViewDefine.h; sourceTree = "<group>"; };
@@ -72,7 +69,6 @@
 			children = (
 				A475C63D1C5F025700966D67 /* IBLImageview */,
 				A475C6491C5F025700966D67 /* IBLImageviewTests */,
-				A475C68C1C5F22A700966D67 /* iblimageview */,
 				A475C69D1C5F245F00966D67 /* IBLImageview */,
 				A475C63C1C5F025700966D67 /* Products */,
 			);
@@ -138,15 +134,6 @@
 				A479DB061C9BF2BB00EE8DE9 /* IBLGifImageViewDefine.h */,
 			);
 			path = Image;
-			sourceTree = "<group>";
-		};
-		A475C68C1C5F22A700966D67 /* iblimageview */ = {
-			isa = PBXGroup;
-			children = (
-				A475C68D1C5F22A700966D67 /* iblimageview.h */,
-				A475C68F1C5F22A800966D67 /* iblimageview.m */,
-			);
-			path = iblimageview;
 			sourceTree = "<group>";
 		};
 		A475C69D1C5F245F00966D67 /* IBLImageview */ = {
@@ -253,7 +240,6 @@
 			files = (
 				A475C6A51C5F247300966D67 /* IBLImage.m in Sources */,
 				A475C6A61C5F247300966D67 /* IBLImageCenter.m in Sources */,
-				A475C6A71C5F247300966D67 /* IBLImageView.m in Sources */,
 				A475C6A81C5F247300966D67 /* IBLRender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
