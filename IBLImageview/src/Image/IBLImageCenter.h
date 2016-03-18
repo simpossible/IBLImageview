@@ -12,5 +12,9 @@
 
 + (IBLImageCenter*)sharedCenter;
 
-- (IBLImage*)getIBLImageWithPath:(NSString*)path;
+/**通过该方法获得的image 对象 会同步播放*/
+- (IBLImage *)getIBLImageWithPath:(NSString*)path;
+
+/**该方法会 获得单独的image*/
+- (IBLImage *)getIBLImageWithPath:(NSString *)path andPlayTimes:(NSInteger *)times andCallback:(void (^)())succ;
 @end

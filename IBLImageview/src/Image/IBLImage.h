@@ -40,14 +40,21 @@
  */
 @property(nonatomic, assign, readonly)NSInteger   imageCount;
 
+/**gif 的播放次数 */
+@property(nonatomic, assign, readonly)NSInteger playTimes;
+
 @property(nonatomic, assign)int imageIndex;
 
 - (instancetype)initWithPath:(NSString *)path;
+
+- (instancetype)initWithPath:(NSString *)path playTimes:(NSInteger)playtime andCallBack:(void (^)())callback;
 
 //- (void)test;
 
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate;
 
 - (void)removeDelegate:(id<IBLImageRenderDelegate>)delegate;
+
 - (void)stopRender;
+
 @end

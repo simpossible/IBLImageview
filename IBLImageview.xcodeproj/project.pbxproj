@@ -62,8 +62,8 @@
 		A475C68D1C5F22A700966D67 /* iblimageview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iblimageview.h; sourceTree = "<group>"; };
 		A475C68F1C5F22A800966D67 /* iblimageview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iblimageview.m; sourceTree = "<group>"; };
 		A475C69C1C5F245F00966D67 /* libIBLImageview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIBLImageview.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A475C69E1C5F245F00966D67 /* IBLImageview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBLImageview.h; sourceTree = "<group>"; };
-		A475C6A01C5F245F00966D67 /* IBLImageview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBLImageview.m; sourceTree = "<group>"; };
+		A479DB051C9BCA7300EE8DE9 /* IBLGIFImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBLGIFImageView.h; sourceTree = "<group>"; };
+		A479DB061C9BF2BB00EE8DE9 /* IBLGifImageViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLGifImageViewDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +160,8 @@
 				A475C6731C5F04E500966D67 /* IBLImageView.m */,
 				A475C6741C5F04E500966D67 /* IBLRender.h */,
 				A475C6751C5F04E500966D67 /* IBLRender.m */,
+				A479DB051C9BCA7300EE8DE9 /* IBLGIFImageView.h */,
+				A479DB061C9BF2BB00EE8DE9 /* IBLGifImageViewDefine.h */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -176,8 +178,6 @@
 		A475C69D1C5F245F00966D67 /* IBLImageview */ = {
 			isa = PBXGroup;
 			children = (
-				A475C69E1C5F245F00966D67 /* IBLImageview.h */,
-				A475C6A01C5F245F00966D67 /* IBLImageview.m */,
 			);
 			path = IBLImageview;
 			sourceTree = "<group>";
