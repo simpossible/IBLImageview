@@ -7,12 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A479DBD41C9C06E900EE8DE9 /* IBLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBCC1C9C06E900EE8DE9 /* IBLImage.m */; };
-		A479DBD51C9C06E900EE8DE9 /* IBLImageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBCE1C9C06E900EE8DE9 /* IBLImageCenter.m */; };
-		A479DBD61C9C06E900EE8DE9 /* IBLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBD11C9C06E900EE8DE9 /* IBLImageView.m */; };
-		A479DBD71C9C06E900EE8DE9 /* IBLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBD31C9C06E900EE8DE9 /* IBLRender.m */; };
-		A479DBD91C9C082600EE8DE9 /* IBLIGifImageview.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A479DBD81C9C07C500EE8DE9 /* IBLIGifImageview.h */; };
+		A479DBE71C9C0A8A00EE8DE9 /* IBLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBDF1C9C0A8A00EE8DE9 /* IBLImage.m */; };
+		A479DBE81C9C0A8A00EE8DE9 /* IBLImageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBE11C9C0A8A00EE8DE9 /* IBLImageCenter.m */; };
+		A479DBE91C9C0A8A00EE8DE9 /* IBLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBE31C9C0A8A00EE8DE9 /* IBLImageView.m */; };
+		A479DBEA1C9C0A8A00EE8DE9 /* IBLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBE61C9C0A8A00EE8DE9 /* IBLRender.m */; };
+		A479DBF91C9C128400EE8DE9 /* IBLImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A479DBDE1C9C0A8A00EE8DE9 /* IBLImage.h */; };
+		A479DBFD1C9C128400EE8DE9 /* IBLImageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A479DBE21C9C0A8A00EE8DE9 /* IBLImageView.h */; };
+		A479DC131C9C151D00EE8DE9 /* IBLGifImageview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A479DC091C9C151D00EE8DE9 /* IBLGifImageview.framework */; };
+		A479DC181C9C151D00EE8DE9 /* IBLGifImageviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DC171C9C151D00EE8DE9 /* IBLGifImageviewTests.m */; };
+		A479DC351C9C174A00EE8DE9 /* IBLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBDF1C9C0A8A00EE8DE9 /* IBLImage.m */; };
+		A479DC361C9C174A00EE8DE9 /* IBLImageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBE11C9C0A8A00EE8DE9 /* IBLImageCenter.m */; };
+		A479DC371C9C174A00EE8DE9 /* IBLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBE31C9C0A8A00EE8DE9 /* IBLImageView.m */; };
+		A479DC391C9C176D00EE8DE9 /* IBLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DBE61C9C0A8A00EE8DE9 /* IBLRender.m */; };
+		A479DC3D1C9C17EC00EE8DE9 /* IBLGifImageViewDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBDD1C9C0A8A00EE8DE9 /* IBLGifImageViewDefine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A479DC3E1C9C17EC00EE8DE9 /* IBLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBDE1C9C0A8A00EE8DE9 /* IBLImage.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A479DC3F1C9C17EC00EE8DE9 /* IBLImageCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBE01C9C0A8A00EE8DE9 /* IBLImageCenter.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A479DC401C9C17EC00EE8DE9 /* IBLImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBE21C9C0A8A00EE8DE9 /* IBLImageView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A479DC411C9C17EC00EE8DE9 /* IBLRender.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBE51C9C0A8A00EE8DE9 /* IBLRender.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A479DC461C9C186500EE8DE9 /* IBLImageView+image.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DC441C9C186500EE8DE9 /* IBLImageView+image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A479DC471C9C186500EE8DE9 /* IBLImageView+image.m in Sources */ = {isa = PBXBuildFile; fileRef = A479DC451C9C186500EE8DE9 /* IBLImageView+image.m */; };
+		A479DC4D1C9C19B900EE8DE9 /* IBLImageView+image.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DC441C9C186500EE8DE9 /* IBLImageView+image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A479DC4E1C9C19B900EE8DE9 /* IBLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBDE1C9C0A8A00EE8DE9 /* IBLImage.h */; };
+		A479DC4F1C9C19B900EE8DE9 /* IBLImageCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBE01C9C0A8A00EE8DE9 /* IBLImageCenter.h */; };
+		A479DC501C9C19B900EE8DE9 /* IBLImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBE21C9C0A8A00EE8DE9 /* IBLImageView.h */; };
+		A479DC511C9C19B900EE8DE9 /* IBLRender.h in Headers */ = {isa = PBXBuildFile; fileRef = A479DBE51C9C0A8A00EE8DE9 /* IBLRender.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A479DC141C9C151D00EE8DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A479DBB21C9C068300EE8DE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A479DC081C9C151D00EE8DE9;
+			remoteInfo = IBLGifImageview;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A479DBB81C9C068300EE8DE9 /* CopyFiles */ = {
@@ -21,7 +50,17 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A479DBD91C9C082600EE8DE9 /* IBLIGifImageview.h in CopyFiles */,
+				A479DBF91C9C128400EE8DE9 /* IBLImage.h in CopyFiles */,
+				A479DBFD1C9C128400EE8DE9 /* IBLImageView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A479DC231C9C15FA00EE8DE9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,18 +68,23 @@
 
 /* Begin PBXFileReference section */
 		A479DBBA1C9C068300EE8DE9 /* libIBLImageview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIBLImageview.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A479DBC91C9C06E900EE8DE9 /* IBLGIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLGIFImageView.h; sourceTree = "<group>"; };
-		A479DBCA1C9C06E900EE8DE9 /* IBLGifImageViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLGifImageViewDefine.h; sourceTree = "<group>"; };
-		A479DBCB1C9C06E900EE8DE9 /* IBLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImage.h; sourceTree = "<group>"; };
-		A479DBCC1C9C06E900EE8DE9 /* IBLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImage.m; sourceTree = "<group>"; };
-		A479DBCD1C9C06E900EE8DE9 /* IBLImageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageCenter.h; sourceTree = "<group>"; };
-		A479DBCE1C9C06E900EE8DE9 /* IBLImageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageCenter.m; sourceTree = "<group>"; };
-		A479DBCF1C9C06E900EE8DE9 /* IBLImageView+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBLImageView+image.h"; sourceTree = "<group>"; };
-		A479DBD01C9C06E900EE8DE9 /* IBLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageView.h; sourceTree = "<group>"; };
-		A479DBD11C9C06E900EE8DE9 /* IBLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageView.m; sourceTree = "<group>"; };
-		A479DBD21C9C06E900EE8DE9 /* IBLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLRender.h; sourceTree = "<group>"; };
-		A479DBD31C9C06E900EE8DE9 /* IBLRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLRender.m; sourceTree = "<group>"; };
-		A479DBD81C9C07C500EE8DE9 /* IBLIGifImageview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLIGifImageview.h; sourceTree = "<group>"; };
+		A479DBDD1C9C0A8A00EE8DE9 /* IBLGifImageViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLGifImageViewDefine.h; sourceTree = "<group>"; };
+		A479DBDE1C9C0A8A00EE8DE9 /* IBLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImage.h; sourceTree = "<group>"; };
+		A479DBDF1C9C0A8A00EE8DE9 /* IBLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImage.m; sourceTree = "<group>"; };
+		A479DBE01C9C0A8A00EE8DE9 /* IBLImageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageCenter.h; sourceTree = "<group>"; };
+		A479DBE11C9C0A8A00EE8DE9 /* IBLImageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageCenter.m; sourceTree = "<group>"; };
+		A479DBE21C9C0A8A00EE8DE9 /* IBLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLImageView.h; sourceTree = "<group>"; };
+		A479DBE31C9C0A8A00EE8DE9 /* IBLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLImageView.m; sourceTree = "<group>"; };
+		A479DBE51C9C0A8A00EE8DE9 /* IBLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLRender.h; sourceTree = "<group>"; };
+		A479DBE61C9C0A8A00EE8DE9 /* IBLRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLRender.m; sourceTree = "<group>"; };
+		A479DC091C9C151D00EE8DE9 /* IBLGifImageview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBLGifImageview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A479DC0B1C9C151D00EE8DE9 /* IBLGifImageview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBLGifImageview.h; sourceTree = "<group>"; };
+		A479DC0D1C9C151D00EE8DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A479DC121C9C151D00EE8DE9 /* IBLGifImageviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBLGifImageviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A479DC171C9C151D00EE8DE9 /* IBLGifImageviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBLGifImageviewTests.m; sourceTree = "<group>"; };
+		A479DC191C9C151D00EE8DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A479DC441C9C186500EE8DE9 /* IBLImageView+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBLImageView+image.h"; sourceTree = "<group>"; };
+		A479DC451C9C186500EE8DE9 /* IBLImageView+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IBLImageView+image.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +95,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A479DC051C9C151D00EE8DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A479DC0F1C9C151D00EE8DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A479DC131C9C151D00EE8DE9 /* IBLGifImageview.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				A479DBBC1C9C068300EE8DE9 /* IBLImageview */,
+				A479DC0A1C9C151D00EE8DE9 /* IBLGifImageview */,
+				A479DC161C9C151D00EE8DE9 /* IBLGifImageviewTests */,
 				A479DBBB1C9C068300EE8DE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				A479DBBA1C9C068300EE8DE9 /* libIBLImageview.a */,
+				A479DC091C9C151D00EE8DE9 /* IBLGifImageview.framework */,
+				A479DC121C9C151D00EE8DE9 /* IBLGifImageviewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +145,6 @@
 		A479DBC61C9C06E900EE8DE9 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				A479DBD81C9C07C500EE8DE9 /* IBLIGifImageview.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -90,6 +152,8 @@
 		A479DBC71C9C06E900EE8DE9 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				A479DC441C9C186500EE8DE9 /* IBLImageView+image.h */,
+				A479DC451C9C186500EE8DE9 /* IBLImageView+image.m */,
 				A479DBC81C9C06E900EE8DE9 /* Image */,
 			);
 			path = src;
@@ -98,22 +162,66 @@
 		A479DBC81C9C06E900EE8DE9 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A479DBC91C9C06E900EE8DE9 /* IBLGIFImageView.h */,
-				A479DBCA1C9C06E900EE8DE9 /* IBLGifImageViewDefine.h */,
-				A479DBCB1C9C06E900EE8DE9 /* IBLImage.h */,
-				A479DBCC1C9C06E900EE8DE9 /* IBLImage.m */,
-				A479DBCD1C9C06E900EE8DE9 /* IBLImageCenter.h */,
-				A479DBCE1C9C06E900EE8DE9 /* IBLImageCenter.m */,
-				A479DBCF1C9C06E900EE8DE9 /* IBLImageView+image.h */,
-				A479DBD01C9C06E900EE8DE9 /* IBLImageView.h */,
-				A479DBD11C9C06E900EE8DE9 /* IBLImageView.m */,
-				A479DBD21C9C06E900EE8DE9 /* IBLRender.h */,
-				A479DBD31C9C06E900EE8DE9 /* IBLRender.m */,
+				A479DBDD1C9C0A8A00EE8DE9 /* IBLGifImageViewDefine.h */,
+				A479DBDE1C9C0A8A00EE8DE9 /* IBLImage.h */,
+				A479DBDF1C9C0A8A00EE8DE9 /* IBLImage.m */,
+				A479DBE01C9C0A8A00EE8DE9 /* IBLImageCenter.h */,
+				A479DBE11C9C0A8A00EE8DE9 /* IBLImageCenter.m */,
+				A479DBE21C9C0A8A00EE8DE9 /* IBLImageView.h */,
+				A479DBE31C9C0A8A00EE8DE9 /* IBLImageView.m */,
+				A479DBE51C9C0A8A00EE8DE9 /* IBLRender.h */,
+				A479DBE61C9C0A8A00EE8DE9 /* IBLRender.m */,
 			);
 			path = Image;
 			sourceTree = "<group>";
 		};
+		A479DC0A1C9C151D00EE8DE9 /* IBLGifImageview */ = {
+			isa = PBXGroup;
+			children = (
+				A479DC0B1C9C151D00EE8DE9 /* IBLGifImageview.h */,
+				A479DC0D1C9C151D00EE8DE9 /* Info.plist */,
+			);
+			path = IBLGifImageview;
+			sourceTree = "<group>";
+		};
+		A479DC161C9C151D00EE8DE9 /* IBLGifImageviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				A479DC171C9C151D00EE8DE9 /* IBLGifImageviewTests.m */,
+				A479DC191C9C151D00EE8DE9 /* Info.plist */,
+			);
+			path = IBLGifImageviewTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A479DC061C9C151D00EE8DE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A479DC461C9C186500EE8DE9 /* IBLImageView+image.h in Headers */,
+				A479DC411C9C17EC00EE8DE9 /* IBLRender.h in Headers */,
+				A479DC3D1C9C17EC00EE8DE9 /* IBLGifImageViewDefine.h in Headers */,
+				A479DC3E1C9C17EC00EE8DE9 /* IBLImage.h in Headers */,
+				A479DC3F1C9C17EC00EE8DE9 /* IBLImageCenter.h in Headers */,
+				A479DC401C9C17EC00EE8DE9 /* IBLImageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A479DC4C1C9C19AC00EE8DE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A479DC4D1C9C19B900EE8DE9 /* IBLImageView+image.h in Headers */,
+				A479DC4E1C9C19B900EE8DE9 /* IBLImage.h in Headers */,
+				A479DC4F1C9C19B900EE8DE9 /* IBLImageCenter.h in Headers */,
+				A479DC501C9C19B900EE8DE9 /* IBLImageView.h in Headers */,
+				A479DC511C9C19B900EE8DE9 /* IBLRender.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A479DBB91C9C068300EE8DE9 /* IBLImageview */ = {
@@ -123,6 +231,7 @@
 				A479DBB61C9C068300EE8DE9 /* Sources */,
 				A479DBB71C9C068300EE8DE9 /* Frameworks */,
 				A479DBB81C9C068300EE8DE9 /* CopyFiles */,
+				A479DC4C1C9C19AC00EE8DE9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -132,6 +241,43 @@
 			productName = IBLImageview;
 			productReference = A479DBBA1C9C068300EE8DE9 /* libIBLImageview.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		A479DC081C9C151D00EE8DE9 /* IBLGifImageview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A479DC1E1C9C151D00EE8DE9 /* Build configuration list for PBXNativeTarget "IBLGifImageview" */;
+			buildPhases = (
+				A479DC041C9C151D00EE8DE9 /* Sources */,
+				A479DC051C9C151D00EE8DE9 /* Frameworks */,
+				A479DC061C9C151D00EE8DE9 /* Headers */,
+				A479DC071C9C151D00EE8DE9 /* Resources */,
+				A479DC231C9C15FA00EE8DE9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBLGifImageview;
+			productName = IBLGifImageview;
+			productReference = A479DC091C9C151D00EE8DE9 /* IBLGifImageview.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A479DC111C9C151D00EE8DE9 /* IBLGifImageviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A479DC1F1C9C151D00EE8DE9 /* Build configuration list for PBXNativeTarget "IBLGifImageviewTests" */;
+			buildPhases = (
+				A479DC0E1C9C151D00EE8DE9 /* Sources */,
+				A479DC0F1C9C151D00EE8DE9 /* Frameworks */,
+				A479DC101C9C151D00EE8DE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A479DC151C9C151D00EE8DE9 /* PBXTargetDependency */,
+			);
+			name = IBLGifImageviewTests;
+			productName = IBLGifImageviewTests;
+			productReference = A479DC121C9C151D00EE8DE9 /* IBLGifImageviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -143,6 +289,12 @@
 				ORGANIZATIONNAME = simpossible;
 				TargetAttributes = {
 					A479DBB91C9C068300EE8DE9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A479DC081C9C151D00EE8DE9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A479DC111C9C151D00EE8DE9 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -160,23 +312,70 @@
 			projectRoot = "";
 			targets = (
 				A479DBB91C9C068300EE8DE9 /* IBLImageview */,
+				A479DC081C9C151D00EE8DE9 /* IBLGifImageview */,
+				A479DC111C9C151D00EE8DE9 /* IBLGifImageviewTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A479DC071C9C151D00EE8DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A479DC101C9C151D00EE8DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A479DBB61C9C068300EE8DE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A479DBD61C9C06E900EE8DE9 /* IBLImageView.m in Sources */,
-				A479DBD71C9C06E900EE8DE9 /* IBLRender.m in Sources */,
-				A479DBD51C9C06E900EE8DE9 /* IBLImageCenter.m in Sources */,
-				A479DBD41C9C06E900EE8DE9 /* IBLImage.m in Sources */,
+				A479DBE91C9C0A8A00EE8DE9 /* IBLImageView.m in Sources */,
+				A479DBEA1C9C0A8A00EE8DE9 /* IBLRender.m in Sources */,
+				A479DBE81C9C0A8A00EE8DE9 /* IBLImageCenter.m in Sources */,
+				A479DBE71C9C0A8A00EE8DE9 /* IBLImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A479DC041C9C151D00EE8DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A479DC391C9C176D00EE8DE9 /* IBLRender.m in Sources */,
+				A479DC351C9C174A00EE8DE9 /* IBLImage.m in Sources */,
+				A479DC361C9C174A00EE8DE9 /* IBLImageCenter.m in Sources */,
+				A479DC371C9C174A00EE8DE9 /* IBLImageView.m in Sources */,
+				A479DC471C9C186500EE8DE9 /* IBLImageView+image.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A479DC0E1C9C151D00EE8DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A479DC181C9C151D00EE8DE9 /* IBLGifImageviewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A479DC151C9C151D00EE8DE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A479DC081C9C151D00EE8DE9 /* IBLGifImageview */;
+			targetProxy = A479DC141C9C151D00EE8DE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A479DBC11C9C068300EE8DE9 /* Debug */ = {
@@ -262,6 +461,7 @@
 		A479DBC41C9C068300EE8DE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/IBLImageview/src\"/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -271,9 +471,70 @@
 		A479DBC51C9C068300EE8DE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/IBLImageview/src\"/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A479DC1A1C9C151D00EE8DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IBLGifImageview/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibellar.opensource.IBLGifImageview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A479DC1B1C9C151D00EE8DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IBLGifImageview/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibellar.opensource.IBLGifImageview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A479DC1C1C9C151D00EE8DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IBLGifImageviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibellar.opensource.IBLGifImageviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A479DC1D1C9C151D00EE8DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IBLGifImageviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibellar.opensource.IBLGifImageviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -297,6 +558,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A479DC1E1C9C151D00EE8DE9 /* Build configuration list for PBXNativeTarget "IBLGifImageview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A479DC1A1C9C151D00EE8DE9 /* Debug */,
+				A479DC1B1C9C151D00EE8DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A479DC1F1C9C151D00EE8DE9 /* Build configuration list for PBXNativeTarget "IBLGifImageviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A479DC1C1C9C151D00EE8DE9 /* Debug */,
+				A479DC1D1C9C151D00EE8DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

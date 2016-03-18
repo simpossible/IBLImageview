@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#define kIBL_IMG_RE_ANIMATE @"iblimageviewtoreanimation"
+#import "IBLGifImageViewDefine.h"
 
 @protocol IBLImageRenderDelegate <NSObject>
 
