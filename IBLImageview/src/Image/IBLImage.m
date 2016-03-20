@@ -58,6 +58,23 @@
     return self;
 }
 
+- (instancetype)initWithPath:(NSString *)path playTimes:(NSInteger)playtime andCallBack:(void (^)())callback andeveryPlay:(void (^)())everyCallback {
+    if (self = [super init]) {
+        if (path) {
+            self.path = path;
+        }else{
+            self.path = @"";
+        }
+        
+    }
+    [self initialDatas];
+    _playTimes =  playtime;
+    _completeCallback = callback;
+    _imageType = IBLImageTypeRenderWithTImes;
+    self.eachTimeCallBack = everyCallback;
+    return self;
+}
+
 - (instancetype)initWithImagesArray:(NSArray *)images andClamTimesArray:(NSArray *)clams{
     return self;
 }
@@ -242,7 +259,9 @@
 
 /**每一次渲染的回调 一个gif 播放完后*/
 - (void)renderEachComplete {
-    
+    if (self.eachTimeCallBack) {
+        self.eachTimeCallBack();
+    }
 }
 
 - (void)renderComplite {

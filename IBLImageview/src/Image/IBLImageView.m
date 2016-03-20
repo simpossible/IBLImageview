@@ -86,6 +86,25 @@
 }
 
 
+- (void)setImageWithPath:(NSString *)path recycleTime:(NSInteger)times andCallBack:(void (^)())callback andeveryPlay:(void (^)())everyCallback {
+    if ([self isPathIlleagle:path]) {
+        IBLImage *image = [[IBLImage alloc]initWithPath:path playTimes:times andCallBack:callback andeveryPlay:everyCallback];
+        self.retainImage = image;
+        if (image) {
+            if (image.imageCount > 1) {
+                [image addDelegates:self];
+                [[NSNotificationCenter defaultCenter]postNotificationName:kIBL_IMG_RE_ANIMATE object:nil];
+            }else if(image.imageCount == 1){
+                [self setImage:image.images[0]];
+            }else{
+                NSLog(@"IBL:多图获取失败");
+            }
+        }else {
+            NSLog(@"IBL:无法获取gif");
+        }
+    }
+}
+
 - (void)gifToChangePicture:(UIImage *)image{
     if (!image) {
         return;

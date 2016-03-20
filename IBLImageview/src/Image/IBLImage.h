@@ -45,11 +45,16 @@
 
 @property(nonatomic, assign)int imageIndex;
 
+
 - (instancetype)initWithPath:(NSString *)path;
+
+- (instancetype)initWithPath:(NSString *)path andeveryPlay:(void (^)())everyCallback;
 
 - (instancetype)initWithPath:(NSString *)path playTimes:(NSInteger)playtime andCallBack:(void (^)())callback;
 
-//todo
+- (instancetype)initWithPath:(NSString *)path playTimes:(NSInteger)playtime andCallBack:(void (^)())callback andeveryPlay:(void (^)())everyCallback;
+
+//todo 根据多图 和每一帧的时间长度 播放
 - (instancetype)initWithImagesArray:(NSArray *)images andClamTimesArray:(NSArray *)clams;
 
 
