@@ -59,7 +59,7 @@
         int index  = wself.iblImage.imageIndex +1;
         if (index == cout) {
             wself.currentPlayTime ++;
-            if (wself.currentPlayTime == wself.playTimes) {
+            if (wself.currentPlayTime == wself.iblImage.playTimes) {
                 [wself.delegate renderComplite];
                 return;
             }else {
