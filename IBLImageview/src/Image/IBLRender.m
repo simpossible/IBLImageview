@@ -61,6 +61,7 @@
             wself.currentPlayTime ++;
             if (wself.currentPlayTime == wself.iblImage.playTimes) {
                 [wself.delegate renderComplite];
+                [wself.iblImage stopRender];
                 return;
             }else {
                 [wself.delegate renderEachComplete];
