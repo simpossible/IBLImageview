@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>IBLImageview.xcscheme</key>
+		<key>IBLGifImageview.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>iblimageview.xcscheme</key>
+		<key>IBLImageview.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -17,22 +17,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A475C63A1C5F025700966D67</key>
+		<key>A479DBB91C9C068300EE8DE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A475C6441C5F025700966D67</key>
+		<key>A479DC081C9C151D00EE8DE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A475C68A1C5F22A700966D67</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A475C69B1C5F245F00966D67</key>
+		<key>A479DC111C9C151D00EE8DE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

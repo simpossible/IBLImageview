@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A479DBB91C9C068300EE8DE9"
-               BuildableName = "libIBLImageview.a"
-               BlueprintName = "IBLImageview"
+               BlueprintIdentifier = "A479DC081C9C151D00EE8DE9"
+               BuildableName = "IBLGifImageview.framework"
+               BlueprintName = "IBLGifImageview"
                ReferencedContainer = "container:IBLImageview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A479DC111C9C151D00EE8DE9"
+               BuildableName = "IBLGifImageviewTests.xctest"
+               BlueprintName = "IBLGifImageviewTests"
+               ReferencedContainer = "container:IBLImageview.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A479DC081C9C151D00EE8DE9"
+            BuildableName = "IBLGifImageview.framework"
+            BlueprintName = "IBLGifImageview"
+            ReferencedContainer = "container:IBLImageview.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A479DBB91C9C068300EE8DE9"
-            BuildableName = "libIBLImageview.a"
-            BlueprintName = "IBLImageview"
+            BlueprintIdentifier = "A479DC081C9C151D00EE8DE9"
+            BuildableName = "IBLGifImageview.framework"
+            BlueprintName = "IBLGifImageview"
             ReferencedContainer = "container:IBLImageview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A479DBB91C9C068300EE8DE9"
-            BuildableName = "libIBLImageview.a"
-            BlueprintName = "IBLImageview"
+            BlueprintIdentifier = "A479DC081C9C151D00EE8DE9"
+            BuildableName = "IBLGifImageview.framework"
+            BlueprintName = "IBLGifImageview"
             ReferencedContainer = "container:IBLImageview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

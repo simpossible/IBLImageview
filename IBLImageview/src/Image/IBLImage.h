@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#define kIBL_IMG_RE_ANIMATE @"iblimageviewtoreanimation"
+#import "IBLGifImageViewDefine.h"
 
 @protocol IBLImageRenderDelegate <NSObject>
 
@@ -18,6 +18,7 @@
 
 @interface IBLImage : NSObject
 
+@property(nonatomic, assign)BOOL needRender;
 
 /**
  * 当前的所有图片
@@ -39,16 +40,16 @@
  */
 @property(nonatomic, assign, readonly)NSInteger   imageCount;
 
-/**所有播放这张图片的imageview*/
-@property(nonatomic, strong, readonly)NSMutableArray *renders;
-
-@property(nonatomic, assign)NSInteger tag;
+/**gif 的播放次数 */
+@property(nonatomic, assign, readonly)NSInteger playTimes;
 
 @property(nonatomic, assign)int imageIndex;
 
 - (instancetype)initWithPath:(NSString *)path;
 
-- (instancetype)initWithImagesArray:(NSArray*)images andClamTimesArray:(NSArray*)array;
+- (instancetype)initWithPath:(NSString *)path playTimes:(NSInteger)playtime andCallBack:(void (^)())callback;
+
+//- (void)test;
 
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate;
 
@@ -56,6 +57,4 @@
 
 - (void)stopRender;
 
-/**停止播放*/
-- (void)stopPlay;
 @end

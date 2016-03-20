@@ -1,18 +1,18 @@
 //
-//  IBLImageviewTests.m
-//  IBLImageviewTests
+//  IBLGifImageviewTests.m
+//  IBLGifImageviewTests
 //
-//  Created by simpossible on 16/2/1.
+//  Created by simpossible on 16/3/18.
 //  Copyright © 2016年 simpossible. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface IBLImageviewTests : XCTestCase
+@interface IBLGifImageviewTests : XCTestCase
 
 @end
 
-@implementation IBLImageviewTests
+@implementation IBLGifImageviewTests
 
 - (void)setUp {
     [super setUp];

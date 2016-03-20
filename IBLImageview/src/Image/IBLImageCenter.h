@@ -12,19 +12,9 @@
 
 + (IBLImageCenter*)sharedCenter;
 
-/**
- * 根据path 创建
- * 优先搜索缓存里已经存在的
- */
-- (IBLImage*)getIBLImageWithPath:(NSString*)path;
+/**通过该方法获得的image 对象 会同步播放*/
+- (IBLImage *)getIBLImageWithPath:(NSString*)path;
 
-/**
- * 手动创建时指定的key值
- */
-- (IBLImage*)getIBLImageWithKey:(NSString*)imageKey;
-
-/**
- * 手动创建时指定的key值
- */
-- (IBLImage*)getIBLImageWithKey:(NSString*)imageKey andImageArray:(NSArray*)images andDelays:(NSArray*)array;
+/**该方法会 获得单独的image*/
+- (IBLImage *)getIBLImageWithPath:(NSString *)path andPlayTimes:(NSInteger *)times andCallback:(void (^)())succ;
 @end
