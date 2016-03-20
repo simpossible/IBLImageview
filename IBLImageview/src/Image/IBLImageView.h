@@ -28,14 +28,14 @@
 /**每次播放完毕的回调
 * @param everyCallback 每一次播放完毕的回调
 */
-- (void)setImageWithPath:(NSString*)path andeveryPlay:(void (^)(int times))everyCallback;;
+- (void)setImageWithPath:(NSString*)path andEveryPlay:(void (^)(int times))everyCallback;;
 
 /**播放 gif 以本地路径
  * @param times 播放的次数
  * @param callback 播放完成时的回调 切忌循环引用
  * 拥有单独的播放进程 不会 进行同步
  */
-- (void)setImageWithPath:(NSString *)path recycleTime:(NSInteger)times andCallBack:(void (^)())callback;
+- (void)setImageWithPath:(NSString *)path recycleTime:(NSInteger)times andCompleteCallBack:(void (^)())callback;
 
 /**播放 gif 以本地路径
  * @param times 播放的次数
@@ -43,7 +43,7 @@
  * @param everyCallback 每一次播放完毕的回调
  * 拥有单独的播放进程 不会 进行同步
  */
-- (void)setImageWithPath:(NSString *)path recycleTime:(NSInteger)times andCallBack:(void (^)())callback andeveryPlay:(void (^)(int times))everyCallback;
+- (void)setImageWithPath:(NSString *)path recycleTime:(NSInteger)times andCompleteCallBack:(void (^)())callback andeveryPlay:(void (^)(int times))everyCallback;
 
 /**重新播放gif*/
 - (void)restartAnimation;
