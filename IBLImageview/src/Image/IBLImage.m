@@ -21,7 +21,7 @@
 
 @property(nonatomic, copy)void (^completeCallback)();///< 播放完成的回调
 
-@property(nonatomic, copy)void (^eachTimeCallBack)();///< 每一次播放完成的回调
+@property(nonatomic, copy)void (^eachTimeCallBack)(int times);///< 每一次播放完成的回调
 
 @property(nonatomic, assign)IBLImageType imageType;
 @end
@@ -79,7 +79,7 @@
     return self;
 }
 
-- (void)setEveryPlayCallBack:(void (^)())callback {
+- (void)setEveryPlayCallBack:(void (^)(int times))callback {
     self.eachTimeCallBack = nil;
     self.eachTimeCallBack = callback;
 }
@@ -263,9 +263,9 @@
 }
 
 /**每一次渲染的回调 一个gif 播放完后*/
-- (void)renderEachComplete {
+- (void)renderEachComplete:(int)times {
     if (self.eachTimeCallBack) {
-        self.eachTimeCallBack();
+        self.eachTimeCallBack(times);
     }
 }
 

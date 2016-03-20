@@ -65,7 +65,7 @@
     }
 }
 
-- (void)setImageWithPath:(NSString *)path andeveryPlay:(void (^)())everyCallback {
+- (void)setImageWithPath:(NSString *)path andeveryPlay:(void (^)(int times))everyCallback {
     if ([self isPathIlleagle:path]) {
         IBLImage *image = [[IBLImageCenter sharedCenter]getIBLImageWithPath:path ];
         [image setEveryPlayCallBack:everyCallback];
@@ -105,7 +105,7 @@
 }
 
 
-- (void)setImageWithPath:(NSString *)path recycleTime:(NSInteger)times andCallBack:(void (^)())callback andeveryPlay:(void (^)())everyCallback {
+- (void)setImageWithPath:(NSString *)path recycleTime:(NSInteger)times andCallBack:(void (^)())callback andeveryPlay:(void (^)(int times))everyCallback {
     if ([self isPathIlleagle:path]) {
         IBLImage *image = [[IBLImage alloc]initWithPath:path playTimes:times andCallBack:callback andeveryPlay:everyCallback];
         self.retainImage = image;

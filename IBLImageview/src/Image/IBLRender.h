@@ -16,7 +16,7 @@
 - (void)renderComplite;
 
 /**每次播放结束回调*/
-- (void)renderEachComplete;
+- (void)renderEachComplete:(int)times;
 
 @end
 

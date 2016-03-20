@@ -58,13 +58,12 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         int index  = wself.iblImage.imageIndex +1;
         if (index == cout) {
-            wself.currentPlayTime ++;
+             wself.currentPlayTime ++;
+            [wself.delegate renderEachComplete:(int)wself.currentPlayTime];//每一次播放成功
             if (wself.currentPlayTime == wself.iblImage.playTimes) {
                 [wself.delegate renderComplite];
                 [wself.iblImage stopRender];
                 return;
-            }else {
-                [wself.delegate renderEachComplete];
             }
         }
         index = index%cout;

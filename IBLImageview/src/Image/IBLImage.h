@@ -58,7 +58,7 @@
 - (instancetype)initWithImagesArray:(NSArray *)images andClamTimesArray:(NSArray *)clams;
 
 
-- (void)setEveryPlayCallBack:(void (^)())callback;
+- (void)setEveryPlayCallBack:(void (^)(int times))callback;
 
 //- (void)test;
 
