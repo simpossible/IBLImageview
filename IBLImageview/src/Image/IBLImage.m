@@ -58,6 +58,10 @@
     return self;
 }
 
+- (instancetype)initWithImagesArray:(NSArray *)images andClamTimesArray:(NSArray *)clams{
+    return self;
+}
+
 - (void)initialDatas {
     _images = [NSMutableArray array];
     _unclamTimes = [NSMutableArray array];

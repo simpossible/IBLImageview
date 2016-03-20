@@ -49,6 +49,10 @@
 
 - (instancetype)initWithPath:(NSString *)path playTimes:(NSInteger)playtime andCallBack:(void (^)())callback;
 
+//todo
+- (instancetype)initWithImagesArray:(NSArray *)images andClamTimesArray:(NSArray *)clams;
+
+
 //- (void)test;
 
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate;
