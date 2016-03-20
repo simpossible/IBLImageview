@@ -58,6 +58,8 @@
 - (instancetype)initWithImagesArray:(NSArray *)images andClamTimesArray:(NSArray *)clams;
 
 
+- (void)setEveryPlayCallBack:(void (^)())callback;
+
 //- (void)test;
 
 - (void)addDelegates:(id<IBLImageRenderDelegate>)delegate;

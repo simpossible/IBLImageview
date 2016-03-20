@@ -79,6 +79,11 @@
     return self;
 }
 
+- (void)setEveryPlayCallBack:(void (^)())callback {
+    self.eachTimeCallBack = nil;
+    self.eachTimeCallBack = callback;
+}
+
 - (void)initialDatas {
     _images = [NSMutableArray array];
     _unclamTimes = [NSMutableArray array];

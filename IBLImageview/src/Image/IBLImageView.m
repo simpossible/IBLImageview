@@ -65,6 +65,25 @@
     }
 }
 
+- (void)setImageWithPath:(NSString *)path andeveryPlay:(void (^)())everyCallback {
+    if ([self isPathIlleagle:path]) {
+        IBLImage *image = [[IBLImageCenter sharedCenter]getIBLImageWithPath:path ];
+        [image setEveryPlayCallBack:everyCallback];
+        if (image) {
+            if (image.imageCount > 1) {
+                [image addDelegates:self];
+                [[NSNotificationCenter defaultCenter]postNotificationName:kIBL_IMG_RE_ANIMATE object:nil];
+            }else if(image.imageCount == 1){
+                [self setImage:image.images[0]];
+            }else{
+                NSLog(@"IBL:多图获取失败");
+            }
+        }else{
+            NSLog(@"IBL:获取的图片为空");
+        }
+    }
+}
+
 /**设置gif */
 - (void)setImageWithPath:(NSString *)path recycleTime:(NSInteger)times andCallBack:(void (^)())callback {
     if ([self isPathIlleagle:path]) {
